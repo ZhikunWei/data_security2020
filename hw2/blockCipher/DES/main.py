@@ -183,16 +183,6 @@ def bin2hex(bin):
 
 if __name__ == '__main__':
     Sbox = getSBOX()
-    
-    
-    # plaintext = []
-    # ciphertext = []
-    # IV = np.random.randint(0, 256, size=16, dtype=int)
-    # for i in range(8000):
-    #     plaintext.append(np.random.randint(0, 256, size=16))
-    # bitNum = 128 * 8000
-    # key = np.random.randint(0, 256, size=16)
-    # print('plaintext size', bitNum)
     import random
     key = dec2bin(random.randint(0, 2**64-1))
     plaintext = []
